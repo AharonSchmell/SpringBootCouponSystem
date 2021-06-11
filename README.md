@@ -13,6 +13,7 @@ A COMPANY can update its own fields and more importantly- create update and dele
 A CUSTOMER can also update his own fields and buy or cancle a purchase of said coupons.
 
 The design:
+
   COPMANY    ->    OneToMany    ->     COUPON
   
   CUSTOMER   ->    ManyToMany   ->     COUPON --> using a joined table called - customer_coupon with a constraint that a customer can't buy the same coupon twice. 
